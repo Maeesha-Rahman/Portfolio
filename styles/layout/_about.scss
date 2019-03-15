@@ -1,0 +1,19 @@
+.about {
+
+    h2 {
+        text-align: center;
+    }
+    
+   &__content {
+       display: flex;
+       justify-content: center;
+
+       &--img {
+           width: 50%;
+       }
+
+       &--text {
+           width: 50%;
+       }
+   }
+}

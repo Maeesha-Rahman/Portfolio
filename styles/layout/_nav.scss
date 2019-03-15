@@ -1,0 +1,17 @@
+.navigation {
+    display: flex;
+
+    &__menu {
+        display: flex;
+        flex-grow: 1;
+
+        a {
+            padding: 10px 20px;
+        }
+    }
+
+    .logo {
+        align-content: flex-start;
+        flex-grow: 100;
+    }
+}
