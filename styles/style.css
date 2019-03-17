@@ -309,6 +309,8 @@ p {
     padding: 10px 20px;
     background-color: #2ed4b0;
     color: #fff; }
+  .portfolio__content:nth-of-type(2n) {
+    text-align: right; }
 
 .skills {
   background-color: #1b1b1b;

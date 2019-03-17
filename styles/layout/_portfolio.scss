@@ -19,5 +19,9 @@
         a {
             @include link-btn-style;
         }
+
+        &:nth-of-type(2n) {
+            text-align: right;
+        }
     }
 }
