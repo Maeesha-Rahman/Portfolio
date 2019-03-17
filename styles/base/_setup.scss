@@ -4,6 +4,32 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+.visuallyhidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+  
+.skip-link {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background: black;
+    color: white;
+}
+  
+.skip-link:focus {
+    left: 0;
+}
+
 html {
     font-size: 125%;
 }
@@ -11,6 +37,16 @@ html {
 body {
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+h3 {
+    margin: 0;
+    font-size: 1.5rem;
 }
 
 a {
