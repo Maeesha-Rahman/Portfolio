@@ -17,9 +17,11 @@
     <header class="header" id="particles-js">
         <div class="wrapper">
             <nav class="navigation">
-                <div class="logo">
+                <!-- <div class="logo">
                     <h2>Logo</h2>
-                </div>
+                </div> -->
+                <div class="menu-bg"></div>
+                <div class="menu-burger">☰</div>
                 <ul class="navigation__menu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About Me</a></li>
@@ -364,6 +366,11 @@
                loop: true,
            });
        });
+
+       $('.menu-burger, .navigation__menu').on('click', function() {
+        $('.menu-bg, .navigation__menu, .menu-burger').toggleClass('fs');
+        $('.menu-burger').text() == "☰" ? $('.menu-burger').text('✕') : $('.menu-burger').text('☰');
+        });
 
        particlesJS.load('particles-js', 'JS/particles.json', function(){
            console.log('particles.json loaded');

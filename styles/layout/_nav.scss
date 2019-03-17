@@ -1,23 +1,110 @@
-.navigation {
-    display: flex;
+// .navigation {
+//     display: flex;
 
-    &__menu {
-        display: flex;
-        flex-grow: 1;
+//     &__menu {
+//         display: flex;
+//         flex-grow: 1;
 
-        a {
-            padding: 10px 20px;
-            color: #fff;
-            text-transform: uppercase;
-        }
+//         a {
+//             padding: 10px 20px;
+//             color: #fff;
+//             text-transform: uppercase;
+//         }
 
-        a:hover {
-            color: $accent-color;
-        }
-    }
+//         a:hover {
+//             color: $accent-color;
+//         }
+//     }
 
-    .logo {
-        align-content: flex-start;
-        flex-grow: 100;
-    }
+//     .logo {
+//         align-content: flex-start;
+//         flex-grow: 100;
+//     }
+// }
+
+.menu {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  text-align:center;
+  border-radius: 100%;
+  right:25px;
+  top:20px;
+  z-index: 50;
 }
+.menu-bg {
+  @extend .menu;
+  background: $accent-color;
+//   pointer-events: none;
+  transition: .3s; 
+  right:50px;
+  top:50px;
+  position: fixed;
+  transform:translate3d(50%,-50%,0); 
+  transform-origin: center center;
+  z-index: 50;
+  &.fs{
+    transform:translate3d(50%,-50%,0);  
+    width:300vw; 
+    height:300vw;
+    background-color: rgba(0, 0, 0, 0.95);
+  }
+}
+.menu-burger {
+  @extend .menu;
+  color: white;
+  padding-top: 11px;
+//   -webkit-user-select: none;
+  cursor: pointer;
+  transition: .4s;
+  position: fixed;
+  transform-origin: center;
+  z-index: 50;
+  &.fs {
+    transform: rotate(-180deg) translateY(10px);
+  }
+}
+.navigation__menu{
+    position: fixed;
+  position:absolute;
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing:10px;
+  color: white;
+//   width: 100%;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity:0;
+  transition: .4s;
+//   margin-top:100px;
+//   transform: translateY(-200%);
+  pointer-events:none;
+  z-index: 50;
+  ul {
+    transition: 1s;
+    opacity: 0;
+    // margin-top: 100px;
+  }
+  &.fs {
+    // transform: translateY(0);
+    pointer-events:auto;
+    opacity: 1;
+    z-index: 50;
+    position: fixed;
+    ul {
+      opacity: 1;
+    //   margin-top: 75px;
+      text-align: center;
+      z-index: 50;
+    }
+  }
+}
+
+.navigation__menu a {
+    color: white;
+}
+
+// https://codepen.io/bldng/pen/bCiqy
