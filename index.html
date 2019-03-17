@@ -9,6 +9,7 @@
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet"
         href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <title>Maeesha Rahman | Front-End Developer</title>
 </head>
@@ -46,10 +47,10 @@
             <div class="wrapper">
                 <h2>About Me</h2>
                 <div class="about__content">
-                    <div class="about__content--img">
+                    <div class="about__content--img" data-aos="fade-right">
                         <img src="assets/about.jpg" alt="Headshot photo of Maeesha.">
                     </div>
-                    <div class="about__content--text">
+                    <div class="about__content--text" data-aos="fade-left">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dolor minus vitae ipsam laudantium praesentium enim impedit perferendis voluptates esse cupiditate optio veritatis eum voluptatibus consectetur distinctio, modi voluptate inventore!</p>
                     </div>
                 </div>
@@ -63,16 +64,12 @@
                 <h2>Selected Work</h2>
                 <!-- PROJECT 1 -->
                 <div class="portfolio__content">
-                    <div class="portfolio__content--img">
+                    <div class="portfolio__content--img" data-aos="fade-right">
                         <img src="assets/portfolio1.jpg" alt="">
                     </div>
-                    <div class="portfolio__content--text">
-                        <h3>title of project</h3>
-                        <ul>
-                            <li>HTML</li>
-                            <li>SASS</li>
-                            <li>jQuery</li>
-                        </ul>
+                    <div class="portfolio__content--text" data-aos="fade-left">
+                        <h3>Bar-One</h3>
+                        <p>HTML / CSS / SCSS / jQuery</p>
                         <p>Text here</p>
                         <div class="portfolio__content--links">
                             <a href="" class="btn">Live</a>
@@ -82,35 +79,27 @@
                 </div>
                 <!-- PROJECT 2 -->
                 <div class="portfolio__content">
-                    <div class="portfolio__content--text">
-                        <h3>title of project</h3>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
+                    <div class="portfolio__content--text" data-aos="fade-right">
+                        <h3>Makeup Matcher</h3>
+                        <p>HTML / CSS / SCSS / jQuery</p>
                         <p>Text here</p>
                         <div class="portfolio__content--links">
                             <a href="" class="btn">Live</a>
                             <a href="" class="btn">Github</a>
                         </div>
                     </div>
-                    <div class="portfolio__content--img">
+                    <div class="portfolio__content--img" data-aos="fade-left">
                         <img src="assets/portfolio2.jpg" alt=""> 
                     </div>
                 </div>
                 <!-- PROJECT 3 -->
                 <div class="portfolio__content">
-                    <div class="portfolio__content--img">
+                    <div class="portfolio__content--img" data-aos="fade-right">
                         <img src="assets/portfolio3.jpg" alt="">
                     </div>
-                    <div class="portfolio__content--text">
-                        <h3>title of project</h3>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
+                    <div class="portfolio__content--text" data-aos="fade-left">
+                        <h3>The Watchlist</h3>
+                        <p>HTML / CSS / SCSS / jQuery</p>
                         <p>Text here</p>
                         <div class="portfolio__content--links">
                             <a href="" class="btn">Live</a>
@@ -120,20 +109,16 @@
                 </div>
                 <!-- PROJECT 4 -->
                 <div class="portfolio__content">
-                    <div class="portfolio__content--text">
-                        <h3>title of project</h3>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
+                    <div class="portfolio__content--text" data-aos="fade-right">
+                        <h3>Toronto Bike Share Races</h3>
+                        <p>HTML / CSS / SCSS / jQuery</p>
                         <p>Text here</p>
                         <div class="portfolio__content--links">
                             <a href="" class="btn">Live</a>
                             <a href="" class="btn">Github</a>
                         </div>
                     </div>
-                    <div class="portfolio__content--img">
+                    <div class="portfolio__content--img" data-aos="fade-left">
                         <img src="assets/portfolio4.jpg" alt="">
                     </div>
                 </div>
@@ -352,6 +337,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   
    <script>
        $(function () {
@@ -375,6 +361,14 @@
        particlesJS.load('particles-js', 'JS/particles.json', function(){
            console.log('particles.json loaded');
        });
+
+       AOS.init({
+            easing: 'ease-out-back',
+            duration: 800,
+            delay: 300,
+            once: true,
+            disable: 'mobile'
+        });
 </script>
 
 </body>
