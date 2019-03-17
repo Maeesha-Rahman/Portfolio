@@ -1,11 +1,31 @@
 .header {
-    min-height: 100vh;
-    background-size: cover;
-    background-attachment: fixed;
-    background-color: $bg-color;
-    color: #ffffff;
+    // min-height: 100vh;
+    // background-size: cover;
+    // background-attachment: fixed;
+    // // background-color: $bg-color;
+    // color: #ffffff;
 
     &__content {
         text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        h1 {
+            color: $accent-color;
+            font-size: 3rem;
+        }
     }
+}
+
+#particles-js {
+    background-color: $bg-color;
+    // color: white;
+    min-height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    // background-color: $bg-color;
+    color: #ffffff;
+    z-index: 50;
 }

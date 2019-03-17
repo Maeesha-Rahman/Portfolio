@@ -9,11 +9,20 @@
        justify-content: center;
 
        &--img {
-           width: 50%;
+           width: 30%;
+           border: 10px solid $accent-color;
+       }
+
+       img {
+           margin-left: 25px;
+           margin-top: 25px;
+           margin-bottom: -30px;
+        //    width: 80%;
        }
 
        &--text {
-           width: 50%;
+           width: 60%;
+           margin-left: 5%;
        }
    }
 }

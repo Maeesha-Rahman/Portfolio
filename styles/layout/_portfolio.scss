@@ -15,5 +15,9 @@
         &--text {
             width: 50%;
         }
+
+        a {
+            @include link-btn-style;
+        }
     }
 }
