@@ -18,8 +18,8 @@
     <header class="header" id="home">
         <div class="wrapper">
             <nav class="navigation">
-                <div class="menu-bg"></div>
-                <div class="menu-burger">☰</div>
+                <div class="menu__bg"></div>
+                <div class="menu__burger">☰</div>
                 <ul class="navigation__menu">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About Me</a></li>
@@ -52,7 +52,9 @@
                         <img src="assets/about.jpg" alt="Headshot photo of Maeesha.">
                     </div>
                     <div class="about__content--text" data-aos="fade-left">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dolor minus vitae ipsam laudantium praesentium enim impedit perferendis voluptates esse cupiditate optio veritatis eum voluptatibus consectetur distinctio, modi voluptate inventore!</p>
+                    <p>Hi, there! I’m Maeesha, a Front-End Developer currently based in Toronto, and a graduate of the Web Development Immersive Program at HackerYou College of Technology. With a background in biology, psychology, and biomedical communications, I have developed a keen interest in UX/UI design and am excited about using human-centered design in developing and creating beautiful online experiences.</p>
+                    <p>In university, I had extensive experience creating digital illustrations and developing scientific visual media. I thoroughly enjoyed constructing mock-ups and wireframes, and conducting primary research, such as examining needs assessments and competition analysis before starting the coding process, when developing a health and science related interactive learning tool.</p>
+                    <p>I hope to combine my knowledge of audience-specific media design, responsive design, and web accessibility requirements, in developing well-thought-out applications!</p>
                     </div>
                 </div>
             </div>
@@ -357,7 +359,7 @@
            let typed = new Typed(".type", {
                strings: ['Front-End Developer',
                'UX design enthusiast',
-               'tech fanatic'
+               'huge tech nerd'
                ],
                typeSpeed: 70,
                backDelay: 1200,
@@ -368,26 +370,23 @@
            $('a').smoothScroll({
 	            // offset: -110
 	        });
-       });
 
-       $('.menu-burger, .navigation__menu').on('click', function() {
-        $('.menu-bg, .navigation__menu, .menu-burger').toggleClass('fs');
-        $('.menu-burger').text() == "☰" ? $('.menu-burger').text('✕') : $('.menu-burger').text('☰');
-        });
+            $('.menu__burger, .navigation__menu').on('click', function() {
+            $('.menu__bg, .navigation__menu, .menu__burger').toggleClass('fs');
+            $('.menu__burger').text() == "☰" ? $('.menu__burger').text('✕') : $('.menu__burger').text('☰');
+            });
 
-       particlesJS.load('home', 'JS/particles.json', function(){
-       });
+            particlesJS.load('home', 'js/particles.json', function(){
+            });
 
-    //    particlesJS.load('contact_particle', 'JS/particles.json', function(){
-    //    });
-
-       AOS.init({
-            easing: 'ease',
-            duration: 1000,
-            delay: 300,
-            once: true,
-            disable: 'mobile'
-        });
+            AOS.init({
+                easing: 'ease',
+                duration: 1000,
+                delay: 300,
+                once: true,
+                disable: 'mobile'
+            })
+       });;
 </script>
 
 </body>

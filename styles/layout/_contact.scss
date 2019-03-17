@@ -8,49 +8,50 @@
     }
     input {
         width: 100%;
-        background-color: transparent;
+        background-color: #fff;
         margin-bottom: 2%;
-        color: #fff;
+        color: #000;
         // margin: 2% 0;
         // font-size: 1.5rem;
 		font-family: inherit;
 		padding: 15px 20px;
 		border-radius: 2px;
 		border: none;
-        border-bottom: 3px solid transparent;
-        box-shadow: 0 15px 40px rgba(255,255,255, .1);
+        border-bottom: 8px solid transparent;
+        // box-shadow: 0 15px 40px rgba(255,255,255, .1);
 		// width: 90%;
         display: block;
         
         &:focus {
 			outline: none;
 			box-shadow: 0 10px 20px rgba($accent-color, .2);
-			border-bottom: 3px solid $accent-color;
+			border-bottom: 8px solid $accent-color;
 		}
 
 		&::-webkit-input-placeholder {
-			color: #fff;
+			color: #000;
         }
     }
 
     textarea {
         width: 100%;
-        background-color: transparent;
-        color: #fff;
+        background-color: #fff;
+        color: #000;
         border: none;
         border-radius: 2px;
         padding: 15px 20px;
         margin-bottom: 2%;
-        box-shadow: 0 15px 40px rgba(255,255,255, .1);
+        border-bottom: 8px solid transparent;
+        // box-shadow: 0 15px 40px rgba(255,255,255, .1);
 
         &::-webkit-input-placeholder {
-			color: #fff;
+			color: #000;
         }
 
         &:focus {
 			outline: none;
 			box-shadow: 0 10px 20px rgba($accent-color, .2);
-			border-bottom: 3px solid $accent-color;
+			border-bottom: 8px solid $accent-color;
 		}
     }
 
@@ -68,7 +69,7 @@
     }
 
     ::placeholder {
-        color: white;
+        color: #000;
     }
 }
 
