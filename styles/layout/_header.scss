@@ -4,6 +4,13 @@
     // background-attachment: fixed;
     // // background-color: $bg-color;
     // color: #ffffff;
+    background-color: $bg-color;
+    // color: white;
+    min-height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    // background-color: $bg-color;
+    color: #ffffff;
 
     &__content {
         text-align: center;
@@ -19,12 +26,39 @@
     }
 }
 
-#particles-js {
-    background-color: $bg-color;
-    // color: white;
-    min-height: 100vh;
-    background-size: cover;
-    background-attachment: fixed;
-    // background-color: $bg-color;
-    color: #ffffff;
-}
+.arrow{
+    width: 40px;
+    height: 40px;
+    margin-top: 5%;
+    background: $accent-color;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    // left: 20px;
+    text-align: center;
+    // z-index: 1;
+    // display: table;
+    color: #fff;
+
+    i {
+        font-size: 1.5rem;
+        margin-top: 5px;
+    }
+
+    &:hover {
+        background-color: darken($accent-color, 50%);
+        color: $accent-color;
+    }
+  }
+
+// #particles-js {
+//     // background-color: $bg-color;
+//     // // color: white;
+//     // min-height: 100vh;
+//     // background-size: cover;
+//     // background-attachment: fixed;
+//     // // background-color: $bg-color;
+//     // color: #ffffff;
+// }

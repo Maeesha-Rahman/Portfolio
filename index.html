@@ -15,26 +15,27 @@
 </head>
 <body>
     <!-- HEADER STARTS -->
-    <header class="header" id="particles-js">
+    <header class="header" id="home">
         <div class="wrapper">
             <nav class="navigation">
-                <!-- <div class="logo">
-                    <h2>Logo</h2>
-                </div> -->
                 <div class="menu-bg"></div>
                 <div class="menu-burger">☰</div>
                 <ul class="navigation__menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="header__content">
                 <h1>Maeesha Rahman</h1>
                 <h2>I am a <span class="type"></span></h2>
-                <a href="">down arrow</a>
+            </div>
+            <div class="scroll">
+                <a class="arrow" href="#about">
+                    <i class="fas fa-angle-double-down"></i>
+                </a>
             </div>
         </div>
     </header>
@@ -43,9 +44,9 @@
     <!-- MAIN STARTS -->
     <main>
         <!-- SECTION ABOUT STARTS -->
-        <section class="about">
+        <section class="about" id="about">
             <div class="wrapper">
-                <h2>About Me</h2>
+                <h3>About Me</h3>
                 <div class="about__content">
                     <div class="about__content--img" data-aos="fade-right">
                         <img src="assets/about.jpg" alt="Headshot photo of Maeesha.">
@@ -59,9 +60,9 @@
         <!-- SECTION ABOUT ENDS -->
 
          <!-- SECTION SKILLS STARTS -->
-         <section class="skills">
+         <section class="skills" id="skills">
             <div class="wrapper">
-                <h2>My Toolbox</h2>
+                <h3>My Toolbox</h3>
                 <div class="skills__list">
                     <ul>
                         <li><i class="fab fa-html5"></i></li>
@@ -224,16 +225,16 @@
         <!-- SECTION SKILLS ENDS -->
 
         <!-- SECTION PORTFOLIO STARTS -->
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="wrapper">
-                <h2>Selected Work</h2>
+                <h3>Selected Work</h3>
                 <!-- PROJECT 1 -->
                 <div class="portfolio__content">
                     <div class="portfolio__content--img" data-aos="fade-right">
                         <img src="assets/portfolio1.jpg" alt="">
                     </div>
                     <div class="portfolio__content--text" data-aos="fade-left">
-                        <h3>Bar-One</h3>
+                        <h4>Bar-One</h4>
                         <p>HTML / CSS / SCSS / jQuery</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dolor minus vitae ipsam laudantium praesentium enim impedit perferendis voluptates esse cupiditate optio veritatis eum voluptatibus consectetur distinctio, modi voluptate inventore!</p>
                         <div class="portfolio__content--links">
@@ -245,7 +246,7 @@
                 <!-- PROJECT 2 -->
                 <div class="portfolio__content">
                     <div class="portfolio__content--text" data-aos="fade-right">
-                        <h3>Makeup Matcher</h3>
+                        <h4>Makeup Matcher</h4>
                         <p>HTML / CSS / SCSS / jQuery</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dolor minus vitae ipsam laudantium praesentium enim impedit perferendis voluptates esse cupiditate optio veritatis eum voluptatibus consectetur distinctio, modi voluptate inventore!</p>
                         <div class="portfolio__content--links">
@@ -263,7 +264,7 @@
                         <img src="assets/portfolio3.jpg" alt="">
                     </div>
                     <div class="portfolio__content--text" data-aos="fade-left">
-                        <h3>The Watchlist</h3>
+                        <h4>The Watchlist</h3>
                         <p>HTML / CSS / SCSS / jQuery</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dolor minus vitae ipsam laudantium praesentium enim impedit perferendis voluptates esse cupiditate optio veritatis eum voluptatibus consectetur distinctio, modi voluptate inventore!</p>
                         <div class="portfolio__content--links">
@@ -275,7 +276,7 @@
                 <!-- PROJECT 4 -->
                 <div class="portfolio__content">
                     <div class="portfolio__content--text" data-aos="fade-right">
-                        <h3>Toronto Bike Share Races</h3>
+                        <h4>Toronto Bike Share Races</h4>
                         <p>HTML / CSS / SCSS / jQuery</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dolor minus vitae ipsam laudantium praesentium enim impedit perferendis voluptates esse cupiditate optio veritatis eum voluptatibus consectetur distinctio, modi voluptate inventore!</p>
                         <div class="portfolio__content--links">
@@ -292,18 +293,20 @@
         <!-- SECTION PORTFOLIO ENDS -->
         
         <!-- SECTION CONTACT STARTS -->
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="wrapper">
-                <h2>Contact Me</h2>
-                <form  action="" method="POST" name="contact__form"></form>
-                <label for="name" class="visuallyhidden">Name</label>
-                <input type="text" name="name" id="name" placeholder="Name" required>
-                <label for="email" class="visuallyhidden">Email address</label>
-                <input type="email" name="email" id="email" placeholder="Email address" required>
-                <label for="message" class="visuallyhidden">Message</label>
-                <textarea name="message" placeholder="Message" rows="5"></textarea>
-                <input type="submit" value="Send Message">
-        </form>
+                <h3>Contact Me</h3>
+                <form  action="" method="POST" name="contact__form" class="form"></form>
+                    <label for="name" class="visuallyhidden">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Name" required>
+                    <label for="email" class="visuallyhidden">Email address</label>
+                    <input type="email" name="email" id="email" placeholder="Email address" required>
+                    <label for="message" class="visuallyhidden">Message</label>
+                    <textarea name="message" placeholder="Message" rows="5"></textarea>
+                    <div class="btn">
+                        <button type="submit">Send Message</button>
+                    </div>
+                </form>
             </div>
         </section>
         <!-- SECTION CONTACT ENDS -->
@@ -346,6 +349,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   
    <script>
@@ -360,6 +364,10 @@
                backSpeed: 40,
                loop: true,
            });
+
+           $('a').smoothScroll({
+	            // offset: -110
+	        });
        });
 
        $('.menu-burger, .navigation__menu').on('click', function() {
@@ -367,9 +375,11 @@
         $('.menu-burger').text() == "☰" ? $('.menu-burger').text('✕') : $('.menu-burger').text('☰');
         });
 
-       particlesJS.load('particles-js', 'JS/particles.json', function(){
-           console.log('particles.json loaded');
+       particlesJS.load('home', 'JS/particles.json', function(){
        });
+
+    //    particlesJS.load('contact_particle', 'JS/particles.json', function(){
+    //    });
 
        AOS.init({
             easing: 'ease',
