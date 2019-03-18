@@ -38,3 +38,65 @@
        }
    }
 }
+
+//   media queries
+
+@media all and (max-width: 1000px) {
+	.about {
+        p {
+            font-size: 0.7rem;
+        }
+    }
+}
+
+@media all and (max-width: 900px) {
+	.about {
+        &__content {
+            flex-direction: column;
+            &--text {
+                width: 100%;
+                margin: 0 auto;
+                margin-top: 40px;
+                // text-align: justify;
+            }
+
+            p {
+                font-size: 0.8rem;
+            }
+
+            &--img {
+                width: 50%;
+                margin: 0 auto;
+            }
+
+        }
+    }
+}
+
+@media all and (max-width: 720px) {
+	.about {
+        &__content {
+
+            &--img {
+                width: 80%;
+            }
+
+            p {
+                font-size: 0.7rem;
+            }
+
+        }
+    }
+}
+
+@media all and (max-width: 630px) {
+	.about {
+        &__content {
+
+            &--text {
+                width: 80%;
+            }
+
+        }
+    }
+}

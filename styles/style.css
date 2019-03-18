@@ -339,6 +339,12 @@ p {
     background-color: #010202;
     color: #2ed4b0; }
 
+@media all and (max-width: 500px) {
+  .header h1 {
+    font-size: 2rem; }
+  .header h2 {
+    font-size: 1rem; } }
+
 footer {
   background-color: #1b1b1b;
   padding-top: 1px;
@@ -361,6 +367,10 @@ footer {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2); }
+
+@media all and (max-width: 900px) {
+  footer i {
+    font-size: 1.5rem; } }
 
 .about {
   background-color: #f1f1f1;
@@ -392,6 +402,36 @@ footer {
     .about .direct:hover {
       font-weight: 700; }
 
+@media all and (max-width: 1000px) {
+  .about p {
+    font-size: 0.7rem; } }
+
+@media all and (max-width: 900px) {
+  .about__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .about__content--text {
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 40px; }
+    .about__content p {
+      font-size: 0.8rem; }
+    .about__content--img {
+      width: 50%;
+      margin: 0 auto; } }
+
+@media all and (max-width: 720px) {
+  .about__content--img {
+    width: 80%; }
+  .about__content p {
+    font-size: 0.7rem; } }
+
+@media all and (max-width: 630px) {
+  .about__content--text {
+    width: 80%; } }
+
 .portfolio {
   padding: 100px 0; }
   .portfolio h3 {
@@ -412,7 +452,7 @@ footer {
       color: #2ed4b0;
       font-weight: 700; }
     .portfolio__content p:nth-of-type(2) {
-      font-size: 0.7rem; }
+      font-size: 0.8rem; }
     .portfolio__content--text-right {
       padding-left: 5%; }
     .portfolio__content--text-left {
@@ -458,6 +498,22 @@ footer {
     .skills__list li i {
       font-size: 90px;
       color: #2ed4b0; }
+
+@media all and (max-width: 950px) {
+  .skills__list svg {
+    width: 50px;
+    height: 50px; }
+  .skills__list li {
+    width: calc(100% / 5); }
+    .skills__list li i {
+      font-size: 50px; } }
+
+@media all and (max-width: 550px) {
+  .skills__list svg {
+    width: 40px;
+    height: 40px; }
+  .skills__list li i {
+    font-size: 40px; } }
 
 .contact {
   background-color: #f1f1f1;

@@ -36,3 +36,36 @@
         // }
     }
 }
+
+@media all and (max-width: 950px) {
+	.skills {
+        &__list {
+            svg {
+                width: 50px;
+                height: 50px;
+            }
+            li {
+                width: calc(100% / 5);
+                i {
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 550px) {
+	.skills {
+        &__list {
+            svg {
+                width: 40px;
+                height: 40px;
+            }
+            li {
+                i {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}
