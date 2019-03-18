@@ -74,6 +74,11 @@
 
   a {
     color: white;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
   }
 }
 

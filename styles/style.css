@@ -297,6 +297,8 @@ p {
       z-index: 50; }
   .navigation__menu a {
     color: white; }
+    .navigation__menu a:hover, .navigation__menu a:focus {
+      color: #2ed4b0; }
 
 .header {
   background-color: #1b1b1b;
@@ -338,24 +340,30 @@ p {
     color: #2ed4b0; }
 
 footer {
-  background-color: #000;
+  background-color: #1b1b1b;
   padding-top: 1px;
   color: #fff;
   text-align: center;
-  padding-bottom: 20px; }
+  padding-bottom: 1px; }
   footer li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    display: inline-block;
     padding: 10px; }
   footer i {
     font-size: 2rem;
     color: #2ed4b0; }
   footer p {
     font-size: 1rem; }
+  footer .links {
+    bottom: 20px;
+    right: 20px;
+    position: fixed; }
+  footer a:focus,
+  footer a:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2); }
 
 .about {
+  background-color: #f1f1f1;
   padding: 100px 0; }
   .about h3 {
     text-align: center; }
@@ -415,6 +423,13 @@ footer {
       color: #fff; }
     .portfolio__content:nth-of-type(2n) {
       text-align: right; }
+    .portfolio__content .btn:hover,
+    .portfolio__content .btn:focus {
+      color: #2ed4b0;
+      background-color: #010202;
+      -webkit-transition: all .5s;
+      -o-transition: all .5s;
+      transition: all .5s; }
 
 .skills {
   background-color: #1b1b1b;
@@ -445,11 +460,10 @@ footer {
       color: #2ed4b0; }
 
 .contact {
-  background-color: #1b1b1b;
+  background-color: #f1f1f1;
   padding: 100px 0; }
   .contact h3 {
-    text-align: center;
-    color: #fff; }
+    text-align: center; }
   .contact input {
     width: 100%;
     background-color: #fff;
@@ -475,7 +489,6 @@ footer {
     border: none;
     border-radius: 2px;
     padding: 15px 20px;
-    margin-bottom: 2%;
     border-bottom: 8px solid transparent;
     resize: none; }
     .contact textarea::-webkit-input-placeholder {
@@ -489,7 +502,14 @@ footer {
     border: none;
     padding: 10px 20px;
     background-color: #2ed4b0;
-    color: #fff; }
+    color: #fff;
+    margin-top: 50px; }
+    .contact button:hover, .contact button:focus {
+      color: #2ed4b0;
+      background-color: #010202;
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s; }
   .contact .btn {
     text-align: center; }
   .contact ::-webkit-input-placeholder {

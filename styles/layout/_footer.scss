@@ -1,12 +1,10 @@
 footer {
-    background-color: #000;
+    background-color: $bg-color;
     padding-top: 1px;
     color: #fff;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 1px;
     li {
-        display: flex;
-        display: inline-block;
         padding: 10px;
     }
 
@@ -17,5 +15,16 @@ footer {
 
     p {
         font-size: 1rem;
+    }
+
+    .links {
+        bottom: 20px;
+        right:20px;
+        position: fixed;;
+    }
+
+    a:focus,
+    a:hover {
+        transform: scale(1.2);
     }
 }
