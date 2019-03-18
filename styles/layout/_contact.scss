@@ -5,7 +5,8 @@
     h3 {
         text-align: center;
     }
-    input {
+    input[type="text"],
+    input[type="email"] {
         width: 100%;
         background-color: #fff;
         margin-bottom: 2%;
@@ -54,14 +55,14 @@
 		}
     }
 
-    button {
-        // text-align: center;
+    input[type="submit"] {
         // display: inline-block;
         border: none;
         padding: 10px 20px;
         background-color: $accent-color;
         color: #fff;
         margin-top: 50px;
+        text-align: center;
 
         &:hover,
         &:focus {
