@@ -26,6 +26,15 @@
        &--text {
            width: 60%;
            margin-left: 5%;
+           margin-top: -20px;
+       }
+   }
+
+   .direct {
+       color: $accent-color;
+       border-bottom: 1px solid $accent-color;
+       &:hover {
+           font-weight: 700;
        }
    }
 }

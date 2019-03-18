@@ -376,7 +376,13 @@ footer {
       margin-bottom: -30px; }
     .about__content--text {
       width: 60%;
-      margin-left: 5%; }
+      margin-left: 5%;
+      margin-top: -20px; }
+  .about .direct {
+    color: #2ed4b0;
+    border-bottom: 1px solid #2ed4b0; }
+    .about .direct:hover {
+      font-weight: 700; }
 
 .portfolio {
   padding: 100px 0; }
@@ -470,7 +476,8 @@ footer {
     border-radius: 2px;
     padding: 15px 20px;
     margin-bottom: 2%;
-    border-bottom: 8px solid transparent; }
+    border-bottom: 8px solid transparent;
+    resize: none; }
     .contact textarea::-webkit-input-placeholder {
       color: #000; }
     .contact textarea:focus {
