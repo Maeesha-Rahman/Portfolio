@@ -352,6 +352,8 @@ footer {
   footer i {
     font-size: 2rem;
     color: #2ed4b0; }
+  footer p {
+    font-size: 1rem; }
 
 .about {
   padding: 100px 0; }
@@ -390,12 +392,17 @@ footer {
     padding: 80px 0; }
     .portfolio__content--img {
       width: 50%; }
-    .portfolio__content--text {
+    .portfolio__content--text-right, .portfolio__content--text-left {
       width: 50%; }
-    .portfolio__content--img:nth-of-type(1n) {
-      margin-right: 6%; }
-    .portfolio__content--img:nth-of-type(2n) {
-      margin-left: 5%; }
+    .portfolio__content p:nth-of-type(1) {
+      color: #2ed4b0;
+      font-weight: 700; }
+    .portfolio__content p:nth-of-type(2) {
+      font-size: 0.7rem; }
+    .portfolio__content--text-right {
+      padding-left: 5%; }
+    .portfolio__content--text-left {
+      padding-right: 5%; }
     .portfolio__content a {
       padding: 10px 20px;
       background-color: #2ed4b0;
@@ -408,7 +415,8 @@ footer {
   text-align: center;
   padding: 100px 0; }
   .skills h3 {
-    color: #fff; }
+    color: #fff;
+    padding-bottom: 20px; }
   .skills__list svg {
     width: 90px;
     height: 90px; }
