@@ -25,7 +25,7 @@
        &--text {
            width: 60%;
            margin-left: 5%;
-           margin-top: -20px;
+           margin-top: 20px;
        }
    }
 
@@ -38,16 +38,6 @@
    }
 }
 
-//   media queries
-
-@media all and (max-width: 1000px) {
-	.about {
-        p {
-            font-size: 0.7rem;
-        }
-    }
-}
-
 @media all and (max-width: 900px) {
 	.about {
         &__content {
@@ -56,10 +46,6 @@
                 width: 100%;
                 margin: 0 auto;
                 margin-top: 40px;
-            }
-
-            p {
-                font-size: 0.8rem;
             }
 
             &--img {
@@ -78,27 +64,6 @@
             &--img {
                 width: 80%;
             }
-
-            p {
-                font-size: 0.7rem;
-            }
-
-        }
-    }
-}
-
-@media all and (max-width: 630px) {
-	.about {
-        &__content {
-
-            &--text {
-                width: 80%;
-            }
-
-            &--text p  {
-                line-height: 1;
-            }
-
         }
     }
 }

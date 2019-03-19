@@ -68,6 +68,7 @@
 
   a {
     color: white;
+    padding: 20px;
 
     &:hover,
     &:focus {
@@ -76,4 +77,26 @@
   }
 }
 
-// inspiration from https://codepen.io/bldng/pen/bCiqy
+@media all and (max-width: 700px) {
+  .navigation__menu {
+    a {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media all and (max-width: 580px) {
+  .navigation__menu {
+    a {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media all and (max-width: 470px) {
+  .navigation__menu {
+    a {
+      font-size: 0.9rem;
+    }
+  }
+}

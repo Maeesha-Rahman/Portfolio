@@ -306,9 +306,22 @@ p {
       text-align: center;
       z-index: 50; }
   .navigation__menu a {
-    color: white; }
+    color: white;
+    padding: 20px; }
     .navigation__menu a:hover, .navigation__menu a:focus {
       color: #2ed4b0; }
+
+@media all and (max-width: 700px) {
+  .navigation__menu a {
+    font-size: 1.5rem; } }
+
+@media all and (max-width: 580px) {
+  .navigation__menu a {
+    font-size: 1rem; } }
+
+@media all and (max-width: 470px) {
+  .navigation__menu a {
+    font-size: 0.9rem; } }
 
 .header {
   background-color: #1b1b1b;
@@ -401,8 +414,20 @@ footer {
       color: #2ed4b0; }
 
 @media all and (max-width: 900px) {
-  footer .links i {
-    font-size: 1rem; } }
+  footer .links {
+    position: static; }
+    footer .links ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      display: inline-block; }
+    footer .links i {
+      font-size: 1.5rem; }
+    footer .links li {
+      display: inline-block;
+      text-align: center; }
+  footer .up {
+    bottom: 120px; } }
 
 .about {
   background-color: #f1f1f1;
@@ -427,16 +452,12 @@ footer {
     .about__content--text {
       width: 60%;
       margin-left: 5%;
-      margin-top: -20px; }
+      margin-top: 20px; }
   .about .direct {
     color: #2ed4b0;
     border-bottom: 1px solid #2ed4b0; }
     .about .direct:hover {
       font-weight: 700; }
-
-@media all and (max-width: 1000px) {
-  .about p {
-    font-size: 0.7rem; } }
 
 @media all and (max-width: 900px) {
   .about__content {
@@ -448,23 +469,13 @@ footer {
       width: 100%;
       margin: 0 auto;
       margin-top: 40px; }
-    .about__content p {
-      font-size: 0.8rem; }
     .about__content--img {
       width: 50%;
       margin: 0 auto; } }
 
 @media all and (max-width: 720px) {
   .about__content--img {
-    width: 80%; }
-  .about__content p {
-    font-size: 0.7rem; } }
-
-@media all and (max-width: 630px) {
-  .about__content--text {
-    width: 80%; }
-  .about__content--text p {
-    line-height: 1; } }
+    width: 80%; } }
 
 .portfolio {
   padding: 100px 0; }
@@ -507,6 +518,7 @@ footer {
 
 @media all and (max-width: 1000px) {
   .portfolio__content {
+    padding: 40px 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -534,11 +546,7 @@ footer {
 
 @media all and (max-width: 580px) {
   .portfolio__content h4 {
-    font-size: 1rem; }
-  .portfolio__content p {
-    font-size: 0.7rem; }
-  .portfolio__content p:nth-of-type(2) {
-    font-size: 0.7rem; } }
+    font-size: 1rem; } }
 
 .skills {
   background-color: #1b1b1b;

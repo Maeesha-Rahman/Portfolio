@@ -60,9 +60,24 @@ footer {
 @media all and (max-width: 900px) {
 	footer {
         .links {
-            i {
-                font-size: 1rem;
+            position: static;
+            ul {
+                display: flex;
+                display: inline-block;
             }
+
+            i {
+                font-size: 1.5rem;
+            }
+
+            li {
+                display: inline-block;
+                text-align: center;
+            }
+        }
+
+        .up {
+            bottom: 120px;
         }
     }
 }
