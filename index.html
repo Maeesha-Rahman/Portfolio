@@ -10,6 +10,7 @@
     <link rel="stylesheet"
         href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/programming.png">
     <link rel="stylesheet" href="styles/style.css">
     <title>Maeesha Rahman | Front-End Developer</title>
 </head>
@@ -53,7 +54,7 @@
                         <img src="assets/about.jpg" alt="Headshot photo of Maeesha.">
                     </div>
                     <div class="about__content--text" data-aos="fade-left">
-                    <p>Hi, there! I’m Maeesha, a Front-End Developer currently based in Toronto, and a graduate of the Web Development Immersive Program at HackerYou College of Technology. With a background in biology, psychology, and biomedical communications, I have developed a keen interest in UX/UI design. I look forward to using human-centered design in developing and creating beautiful online experiences.</p>
+                    <p>Hi there! I’m Maeesha, a Front-End Developer currently based in Toronto, and a graduate of the Web Development Immersive Program at HackerYou College of Technology. With a background in biology, psychology, and biomedical communications, I have developed a keen interest in UX/UI design. I look forward to using human-centered design in developing and creating beautiful online experiences.</p>
                     <p>In university, I had extensive experience creating digital illustrations and developing scientific visual media. I thoroughly enjoyed constructing mock-ups and wireframes, and conducting primary research. An example would be examining needs assessments and competition analysis before starting the coding process, when I developed a health and science related interactive learning tool.</p>
                     <p>I plan to combine my knowledge of audience-specific media design, responsive design, and web accessibility requirements, in developing well-thought-out applications! <a href="#contact" class="direct">Let's keep in touch!</a></p>
                     </div>
@@ -226,7 +227,7 @@
                 <!-- PROJECT 1 -->
                 <div class="portfolio__content">
                     <div class="portfolio__content--img" data-aos="fade-right">
-                        <img src="assets/portfolio3.jpg" alt="">
+                        <img src="assets/portfolio3.jpg" alt="Laptop and phone screen preview of The Watchlist.">
                     </div>
                     <div class="portfolio__content--text-right" data-aos="fade-left">
                         <h4>The Watchlist</h3>
@@ -250,13 +251,13 @@
                         </div>
                     </div>
                     <div class="portfolio__content--img" data-aos="fade-left">
-                        <img src="assets/portfolio2.jpg" alt=""> 
+                        <img src="assets/portfolio2.jpg" alt="Laptop and phone screen preview of Makeup Matcher app."> 
                     </div>
                 </div>
                 <!-- PROJECT 3 -->
                 <div class="portfolio__content">
                     <div class="portfolio__content--img" data-aos="fade-right">
-                        <img src="assets/portfolio1.jpg" alt="">
+                        <img src="assets/portfolio1.jpg" alt="Laptop and phone screen preview of Bar-One PSD conversion website.">
                     </div>
                     <div class="portfolio__content--text-right" data-aos="fade-left">
                         <h4>Bar-One</h4>
@@ -280,7 +281,7 @@
                         </div>
                     </div>
                     <div class="portfolio__content--img" data-aos="fade-left">
-                        <img src="assets/portfolio4.jpg" alt="">
+                        <img src="assets/portfolio4.jpg" alt="Laptop and phone screen preview of Toronto Bike Share Races app.">
                     </div>
                 </div>
             </div>
@@ -291,13 +292,14 @@
         <section class="contact" id="contact" data-aos="fade-in">
             <div class="wrapper">
                 <h3>Contact Me</h3>
-                <form action="http://www.focuspocus.io/magic/(baff3193e1c4d4c9c8113ddd29365f60)" method="POST" name="contact__form" class="form">
+                <p>Let's build something great together!</p>
+                <form action="http://www.focuspocus.io/magic/baff3193e1c4d4c9c8113ddd29365f60" method="POST" name="contact__form" class="form">
                     <label for="name" class="visuallyhidden">Name</label>
                     <input type="text" name="name" id="name" placeholder="Name" required>
                     <label for="email" class="visuallyhidden">Email address</label>
                     <input type="email" name="email" id="email" placeholder="Email address" required>
                     <label for="message" class="visuallyhidden">Message</label>
-                    <textarea name="message" placeholder="Message" rows="7"></textarea>
+                    <textarea name="message" placeholder="Message" required rows="7"></textarea>
                     <div class="btn">
                         <input type="submit" value="Send Message!">
                     </div>
@@ -387,8 +389,12 @@
             });
 
             $('form').submit(function(event) {
-                event.preventDefault();
-                Swal.fire('Message sent!');
+                Swal.fire({
+                type: 'success',
+                title: 'Your message has been sent',
+                showConfirmButton: false,
+                timer: 1500
+                })
             })
        });
 </script>
