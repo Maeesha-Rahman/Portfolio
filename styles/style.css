@@ -453,11 +453,12 @@ footer {
       width: 60%;
       margin-left: 5%;
       margin-top: 20px; }
-  .about .direct {
-    color: #2ed4b0;
-    border-bottom: 1px solid #2ed4b0; }
-    .about .direct:hover {
-      font-weight: 700; }
+
+.direct {
+  color: #2ed4b0;
+  border-bottom: 1px solid #2ed4b0; }
+  .direct:hover {
+    font-weight: 700; }
 
 @media all and (max-width: 900px) {
   .about__content {
@@ -502,7 +503,7 @@ footer {
       padding-left: 5%; }
     .portfolio__content--text-left {
       padding-right: 5%; }
-    .portfolio__content a {
+    .portfolio__content a.btn {
       padding: 10px 20px;
       background-color: #2ed4b0;
       color: #fff; }
